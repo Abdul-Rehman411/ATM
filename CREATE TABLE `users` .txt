@@ -1,0 +1,11 @@
+Use this query in MySQL Workbench to creat the "users" table
+
+CREATE TABLE `users` (
+  `user_id` int NOT NULL AUTO_INCREMENT,
+  `username` varchar(45) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `balance` double DEFAULT '0',
+  PRIMARY KEY (`user_id`),
+  UNIQUE KEY `id_UNIQUE` (`user_id`),
+  UNIQUE KEY `unique_username` (`username`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
